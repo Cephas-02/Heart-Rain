@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+    font-size: 1.5rem;
+}
+
+.hearts {
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 5s linear forwards;
+    font-size: 1.3rem;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
